@@ -1,0 +1,152 @@
+.np-table th,td{
+    padding-top: 12px !important;
+    padding-bottom: 12px !important;
+    /* min-width: 150px; */
+    /* width: 100%; */
+}
+
+.np-table th,td, .created-date {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    /* line-height: 20px; */
+    color: var(--text-secondary-color);
+    margin: 0;
+}
+
+.np-table th .icon {
+    margin-left: 20px;
+}
+
+.np-table td  {
+    font-weight: 400;
+}
+
+.np-table td .icon {
+    margin-right: 20px;
+}
+
+.np-table tbody td, th{
+    border: unset !important;
+}
+
+.np-table tr {
+    border-bottom: 1px solid rgba(210, 210, 210, 1) !important;
+}
+
+.np-table tbody tr:last-of-type {
+    border-bottom: unset !important;
+}
+
+.action-content {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.action-content img {
+    cursor: pointer;
+}
+
+.np-table .np-edit-btn-small{
+    background: var(--primary-color-1);
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+}
+.np-table .np-delete-btn-small{
+    background: #dc3545;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: unset;
+}
+.np-table .np-delete-btn-small-icon{
+    font-size: 10px;
+    color: #fff;
+}
+
+
+.np-pagination-section{
+    margin-top: 10px;
+}
+
+.np-pagination-section .np-select-page-number {
+    column-gap: 8px;
+}
+
+.np-pagination {
+    margin: 0px;
+}
+
+.np-pagination-section .pages {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.np-pagination-section .pages .export-types{
+    display: flex;
+    column-gap: 10px;
+}
+
+.np-pagination-section .np-select-page-number .form-select{
+    width: fit-content;
+    border: 1px solid rgba(229, 229, 229, 1);
+}
+
+.np-pagination-section .np-select-page-number .showing {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--text-secondary-color);
+    margin: 0;
+}
+
+.np-btn {
+    background: #FFF;
+    border: unset;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 500;
+    text-decoration: unset;
+}
+
+.np-btn-with-icon {
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
+    width: fit-content;
+    padding: 0 10px;
+}
+
+.np-btn-primary {
+    border: 1px solid var(--primary-color-1);
+    color: var(--primary-color-1);
+    height: 32px;
+}
+
+.np-btn-secondary {
+    background: var(--primary-color-1);
+    color: var(--white-bg);
+    height: 32px;
+}
+
+.np-table .actions {
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.np-table .np-flag-header {
+    background: var(--secondary-color-1);
+}

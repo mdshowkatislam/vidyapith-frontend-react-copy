@@ -1,0 +1,101 @@
+[
+    {
+        "id": 1,
+        "uid": 1,
+        "designation_name": "Head Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 2,
+        "uid": 2,
+        "designation_name": "Assistant Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 3,
+        "uid": 3,
+        "designation_name": "Trade Instructor",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 4,
+        "uid": 4,
+        "designation_name": "Senior Asst. Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 5,
+        "uid": 5,
+        "designation_name": "Lab Assistant (Electronics)",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 6,
+        "uid": 6,
+        "designation_name": "Lab Assistant (Computer)",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 7,
+        "uid": 7,
+        "designation_name": "Assistant Head Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 8,
+        "uid": 8,
+        "designation_name": "Senior Assistant Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    },
+    {
+        "id": 9,
+        "uid": 9,
+        "designation_name": "Teacher",
+        "created_by": null,
+        "updated_by": null,
+        "deleted_by": null,
+        "created_at": "2023-10-22 08:54:19",
+        "updated_at": "2023-10-22 08:54:19",
+        "deleted_at": null
+    }
+]

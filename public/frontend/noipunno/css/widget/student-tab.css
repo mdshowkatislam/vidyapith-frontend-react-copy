@@ -1,0 +1,140 @@
+.np-student-tab-container {
+    background-color: white;
+}
+
+.np-student-tab {}
+
+.np-student-tab-link,
+.np-student-tab-link.active {
+    /* display: grid;
+    grid-template-columns: repeat(6, 70px);
+    gap: 20px;  */
+    width: 558px;
+    text-align: center;
+    width: 558px;
+    color: black;
+    font-weight: 600;
+    padding: 2%;
+
+}
+
+.np-student-tab-link.active {
+    border-bottom: 2px solid #428F92 !important;
+    border: none;
+}
+
+.np-file-upload-demo-file-btn-container {
+    padding: 2%;
+
+}
+
+.np-file-upload-demo-file-btn {
+    color: var(--primary-color-1);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.np-student-form-download-btn {
+    float: right;
+}
+
+/* file upload */
+
+.btn:hover {
+    background: #4499c9;
+}
+
+.btn:active {
+    background: #49ADE5;
+}
+
+.np-file-upload-hidden {
+    display: none;
+}
+
+#file-drag {
+    border: 2px dashed #428F92;
+    border-radius: 7px;
+    color: #555;
+    cursor: pointer;
+    display: block;
+    font-weight: bold;
+    margin: 1em 0;
+    padding: 3em;
+    text-align: center;
+    background-color: white;
+}
+
+#file-drag:hover {
+    background: #ddd;
+}
+
+#file-drag:hover,
+#file-drag.hover {
+    border-color: white;
+    border-style: solid;
+    box-shadow: inset 0 3px 4px #888;
+    color: #3070A5;
+}
+
+#file-progress {
+    display: none;
+    margin: 1em auto;
+    width: 100%;
+}
+
+progress {
+    appearance: none;
+    background: #eee;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
+    height: 30px;
+}
+
+progress[value]::-webkit-progress-value {
+    background:
+        -webkit-linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+        -webkit-linear-gradient(right,
+            #005f95,
+            #07294d);
+    background:
+        linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+        linear-gradient(right,
+            #005f95,
+            #07294d);
+    background-size: 60px 30px, 100% 100%, 100% 100%;
+    border-radius: 3px;
+}
+
+progress[value]::-moz-progress-bar {
+    background:
+        -moz-linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+        -moz-linear-gradient(right,
+            #005f95,
+            #07294d);
+    background:
+        linear-gradient(-45deg,
+            transparent 33%,
+            rgba(0, 0, 0, .2) 33%,
+            rgba(0, 0, 0, .2) 66%,
+            transparent 66%),
+        linear-gradient(right,
+            #005f95,
+            #07294d);
+    background-size: 60px 30px, 100% 100%, 100% 100%;
+    border-radius: 3px;
+}
+

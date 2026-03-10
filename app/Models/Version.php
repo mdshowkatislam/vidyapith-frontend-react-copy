@@ -1,0 +1,43 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+use App\Traits\CreatedUpdatedBy;
+use App\Traits\CreatedUId;
+
+class Version extends Model
+{
+    use SoftDeletes, HasFactory;
+    use CreatedUId;
+    use CreatedUpdatedBy;
+
+    protected $fillable = [
+        'uid',
+        'version_id',
+        'branch_id',
+        'version_name_bn',
+        'version_name_en',
+        'eiin',
+        'rec_status',
+        'created_by',
+        'updated_by',
+        'deleted_by',
+        'created_at',
+        'updated_at',
+        'deleted_at',
+    ];
+
+    public function branch()
+    {
+        return $this->belongsTo(Branch::class, 'branch_id', 'uid')->select('uid', 'branch_name');
+    }
+
+    public function finalExam()
+    {
+        return $this->belongsTo(FinalExam::class, 'version_id', 'uid')->select('uid', 'version_name_bn');
+    }
+
+}

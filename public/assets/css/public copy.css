@@ -1,0 +1,557 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+.min-vh-90-100 {
+  height: calc(100vh - 100px);
+}
+.max-width-540 {
+  max-width: 540px;
+}
+body {
+  font-family: "Roboto";
+  box-sizing: border-box;
+}
+
+:root {
+  /* color */
+  --bg_primary_dark: #2d6668;
+  --bg_primary: #428f92;
+  --bg_secondary: #a9fcff;
+  --bg_success: #f0fae9;
+  --text_primary_dark: #2d6668;
+  --text_secondary_dark: #0e7e7e;
+  --text_primary_fade: #7daeb0;
+  --text_success: #69cb1c;
+  --text_dark: #222222;
+  --text_white: #ffffff;
+  --text_blue_dark: #181c32;
+}
+
+/* ---------login page start------------------- */
+.login-page {
+  background: linear-gradient(180deg, #befdff 0%, #a2f3f5 100%);
+}
+.login-bg {
+  background-size: auto;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-image: url(/assets/images/LoginbgImage.svg);
+}
+.marque-notification {
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  transition: top 2s ease 0s; /* only transition top property */
+  top: 20px; /* start transitioning from position '0' instead of 'auto' */
+  padding: 4px 0;
+  color: #0e7e7e;
+  background-color: #ffffff;
+  border-radius: 30px;
+  padding-bottom: 0px;
+}
+.loginLogo {
+  height: 95px;
+  width: 226px;
+}
+.login-page .loginCard {
+  border-radius: 6px;
+  padding: 30px 80px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.teacher-login-title {
+  color: var(--text_dark);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 39px;
+  letter-spacing: 2px;
+  text-align: left;
+  font-family: Noto Sans Bengali;
+}
+
+.np-login-subtitle {
+  color: var(--text_dark);
+  font-family: Noto Sans Bengali;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.login-title {
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--text_blue_dark);
+  font-family: Noto Sans Bengali;
+}
+.login-container {
+  padding-top: 6%;
+  padding-bottom: 4%;
+}
+
+.np-login-checbox-text {
+  color: var(--text-secondary-color);
+}
+
+.login-button {
+  display: flex;
+  padding: 14px 112px 14px 111px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+  background: var(--primary-color-1);
+  margin: 0 auto;
+  width: 100%;
+  font-family: Noto Sans Bengali;
+}
+
+.login-button:hover {
+  background: #428f92;
+}
+
+.password-toggle {
+  position: absolute;
+  right: 3%;
+  top: 20%;
+  z-index: 100;
+}
+
+.np-login-field-icon {
+  position: absolute;
+  left: 4%;
+  z-index: 100;
+  top: 30%;
+  width: 20px;
+  color: var(--text_dark);
+}
+.collect-pin {
+  font-family: Noto Sans Bengali;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #5e6278;
+}
+.collect-pin input {
+  color: var(--text_secondary_dark);
+}
+.login-btn {
+  background-color: var(--bg_primary);
+  color: var(--text_white);
+  font-family: Noto Sans Bengali;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+}
+
+.forget-password {
+  font-family: Noto Sans Bengali;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #5e6278;
+}
+.forget-password:hover {
+  color: var(--bg_primary_dark);
+}
+/* --------- */
+.form-check-input:checked {
+  background-color: var(--text_secondary_dark) !important;
+  border: 0;
+}
+.form-check-input:focus,
+.label::after,
+label.form-check-label:focus,
+.form-check-input::after,
+.form-check-input:not(:disabled):not(.disabled):active:focus {
+  color: black;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 0 0 0.1rem var(--text_primary_dark) !important;
+}
+.form-check-style {
+  padding-left: 45px;
+}
+.pin-collect {
+  padding-left: 10px;
+}
+/* --------- */
+.np-login-form-field {
+  border-radius: 5px !important;
+  background-color: #f5f8fa;
+  padding: 0.775rem 2.75rem;
+  border: none;
+}
+
+.login-field-title {
+  font-family: Noto Sans Bengali;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: var(--bg_primary);
+}
+
+.login-next-page {
+  color: white;
+  text-decoration: none;
+}
+
+.login-forget-pass {
+  float: right;
+  text-decoration: none;
+  color: black;
+}
+
+.login-language {
+  font-weight: 400;
+  color: #222;
+}
+
+.footer-menus a {
+  font-size: 12px;
+  color: var(--text_dark);
+}
+.footer-menus a:hover {
+  color: var(--bg_primary);
+}
+.helpedBy p {
+  font-family: Public Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 10px;
+  letter-spacing: 0px;
+  text-align: right;
+}
+.helpedBy img {
+  height: 32px;
+  width: 32px;
+}
+
+/* app info start */
+.app-info-btn {
+  background-color: var(--bg_primary);
+  box-shadow: 0px 2px 3px 0px #0000001a;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 50%;
+  gap: 10px;
+  height: 44px;
+  width: 44px;
+  border: none;
+}
+.app-info-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.chat_box {
+  position: fixed;
+  right: 3px;
+  bottom: 60px;
+  z-index: 999;
+}
+.popup {
+  position: absolute;
+  width: 257px;
+  height: 358px;
+  border-radius: 6px;
+  right: 0;
+  bottom: 100%;
+  display: none;
+  background-color: var(--text_white);
+  margin-bottom: 20px;
+}
+
+.popup:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-top: 10px solid var(--bg_primary);
+  position: absolute;
+  bottom: -18px;
+  right: 15px;
+  z-index: 99;
+}
+
+.popup-app-info-top {
+  height: 300px;
+  padding: 20px;
+  border: 1px solid #93f0f3;
+  border-radius: 6px 6px 0px 0px;
+}
+
+.popup-card-institutions {
+  font-family: Noto Sans Bengali;
+  font-size: 11px;
+  font-weight: 400;
+  height: 60px;
+  letter-spacing: 0px;
+  color: var(--text_dark);
+  padding-top: 5px;
+}
+.popup-card-institutions ul > :first-child {
+  font-weight: 700;
+}
+
+.chat_btn {
+  border: none;
+  border-radius: 6px 6px 0px 0px;
+}
+.popup-app-info-reserved {
+  height: 22px;
+}
+.reserved-app-info {
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 400;
+  height: 19px;
+  letter-spacing: 0px;
+  /* color: var(--text_dark); */
+}
+.popup-card-body {
+  padding: 0px 0px 5px 0px;
+  height: 120px;
+}
+.popup-card-icons {
+  gap: 5px;
+  height: 40px;
+  margin-bottom: 5px;
+}
+.popup-app-info-bottom {
+  height: 105px;
+}
+.popup-version-bottom {
+  height: 58px;
+  background-color: var(--bg_primary);
+  border-radius: 0px 0px 6px 6px;
+}
+.popup-version {
+  padding: 19px 13px 19px 13px;
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.popup-version-info {
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: var(--text_white);
+}
+.loginCard ::placeholder {
+  font-size: 16px;
+  padding-left: 10px;
+}
+/* app info end */
+
+/* media query start */
+@media screen and (min-width: 992px) and (max-width: 1199.98px) {
+  .helpedBy {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 991.98px) {
+  .teacher-login-title {
+    font-size: 16px;
+  }
+  .np-login-subtitle {
+    font-size: 12px;
+  }
+  .login-page .loginCard {
+    padding: 20px 40px;
+  }
+  .np-login-form-field {
+    padding: 0.775rem 2.75rem;
+  }
+  .helpedBy { maxValue = Math.max(...numbers);
+    width: 500px;
+  }
+  .loginCard ::placeholder {
+    font-size: 14px;
+    padding-left: 10px;
+  }
+}
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .loginLogo {
+    height: 50px;
+    width: 100px;
+  }
+  .teacher-login-title {
+    font-size: 16px !important;
+  }
+  .np-login-subtitle {
+    font-size: 12px;
+  }
+  .login-field-title {
+    font-size: 12px;
+  }
+  .login-page .loginCard {
+    padding: 30px 40px;
+  }
+  .np-login-form-field {
+    border-radius: 5px !important;
+    background-color: #f5f8fa;
+    padding: 0.3rem 2.75rem;
+    border: none;
+  }
+  .np-login-subtitle {
+    display: none;
+  }
+  .footer-menus {
+    display: none;
+  }
+  .loginCard ::placeholder {
+    font-size: 14px;
+  }
+  .chat_box {
+    position: fixed;
+    right: 3px;
+    bottom: 58px;
+    z-index: 99;
+  }
+}
+@media screen and (min-width: 376px) and (max-width: 575.98px) {
+  .loginLogo {
+    height: 50px;
+    width: 100px;
+  }
+  .teacher-login-title {
+    font-size: 12px !important;
+  }
+  .np-login-subtitle {
+    font-size: 10px;
+  }
+  .login-field-title {
+    font-size: 16px;
+    padding-bottom: 10px;
+  }
+  .login-page .loginCard {
+    padding: 45px 40px;
+  }
+  .login-page .loginCard .form-group {
+    padding: 10px 0px;
+  }
+  .login-page .loginCard .login-title {
+    padding-bottom: 20px;
+  }
+  .np-login-form-field {
+    border-radius: 5px !important;
+    background-color: #f5f8fa;
+    padding: 0.2rem 0.5rem;
+    border: none;
+  }
+  .np-login-subtitle {
+    display: none;
+  }
+  .footer-menus {
+    display: none;
+  }
+  .form-check-style {
+    padding-left: 45px;
+    font-size: 12px;
+  }
+  .helpedBy {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .chat_box {
+    position: fixed;
+    right: 3px;
+    bottom: 58px;
+    z-index: 99;
+  }
+  .loginCard ::placeholder {
+    font-size: 12px;
+    padding-left: 45px;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 375.98px) {
+  .loginLogo {
+    height: 30px;
+    width: 50px;
+  }
+  .teacher-login-title {
+    font-size: 16px !important;
+  }
+  .np-login-subtitle {
+    font-size: 12px;
+  }
+  .login-field-title {
+    font-size: 12px;
+  }
+  .login-page .loginCard {
+    padding: 30px 40px;
+  }
+  .np-login-form-field {
+    border-radius: 5px !important;
+    background-color: #f5f8fa;
+    padding: 0.5rem 2.75rem;
+    border: none;
+  }
+  .footer-menus {
+    line-height: 1.2;
+    font-size: 12px;
+  }
+  .helpedBy img {
+    height: 20px;
+    width: 20px;
+  }
+  .np-login-subtitle {
+    display: none;
+  }
+  .form-check-style {
+    padding-left: 40px;
+  }
+  .footer-menus {
+    display: none;
+  }
+  .loginCard ::placeholder {
+    font-size: 14px;
+    padding-left: 3px;
+  }
+  .chat_box {
+    position: fixed;
+    right: 3px;
+    bottom: 46px;
+    z-index: 99;
+  }
+}
+/* media query end */
+/* ---------login page end------------------- */

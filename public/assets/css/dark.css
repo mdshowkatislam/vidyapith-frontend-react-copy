@@ -1,0 +1,107 @@
+:root {
+  --text-regular: #dedede;
+  --text-mute: #888888;
+  --text-fade: #555555;
+  --text-secondary: #1e6768;
+  --negative: #000000;
+  --positive: #ffffff;
+  --body-dark-bg: #111111;
+  --primary-bg: #003030;
+  --secondary-dark-bg: #171717;
+  --primary-dark-bg: #001010;
+  --forground-bg: #181818;
+  --dim-s: #787878;
+  --dim-m: #969696;
+  --dim-l: #b4b4b4;
+  --primary-regular: #428f92;
+  --primary-fade: #7caeb0;
+  --primary-dark: #2c6668;
+  --primary-90: #009091;
+  --primary-80: #028081;
+  --primary-70: #027171;
+  --primary-60: #026161;
+  --primary-50: #005050;
+  --primary-40: #014040;
+}
+
+.dark-mode {
+  background-color: var(--body-dark-bg);
+}
+/* navbar start */
+.dark-mode .topnav {
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode .border-bottom-color {
+  border-bottom: 1px solid #333;
+}
+.dark-mode .topnav-dropdown-style:hover {
+  background-color: var(--primary-bg);
+  border-radius: 6px;
+}
+/* main bav bar */
+.dark-mode .main-nav .nav-link {
+  color: var(--text_white);
+}
+.dark-mode .main-nav .tick-icons {
+  color: red !important;
+}
+.dark-mode .main-nav {
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode .main-nav .nav-item .active {
+  background-color: #131616;
+}
+.dark-mode .dropdown-menu-item-style {
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode .dropdown-class-list {
+  color: #1e6768;
+}
+.dark-mode .main-nav #navbarSupportedContent ul li a {
+  color: #ffffff !important;
+}
+.dark-mode .main-nav #navbarSupportedContent ul li:hover > a {
+  background-color: var(--primary-bg);
+}
+.dark-mode .management-dropdown {
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode .profile-style {
+  color: var(--text-secondary);
+}
+.dark-mode .management-dropdown-style:hover {
+  border-radius: 6px;
+  background-color: var(--primary-bg);
+}
+/* navbar end */
+
+/* data table start */
+.dark-mode .class-routine-container {
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode .class-routine-table .tab-th-style {
+  color: var(--dim-s);
+  background-color: var(--primary-dark-bg);
+}
+.dark-mode .class-routine-table .tab-first-td-style {
+  color: var(--dim-s);
+  background-color: var(--primary-dark-bg);
+}
+.dark-mode .class-routine-table .class-and-section {
+  color: var(--positive);
+}
+.dark-mode .class-routine-container .class-routine-header .class_routine {
+  color: var(--dim-s);
+}
+.dark-mode .class-routine-table .tab-td-style {
+  color: var(--dim-s);
+  background-color: var(--secondary-dark-bg);
+}
+.dark-mode
+  .class-routine-container
+  .class-routine-table
+  .class-routine-table-tab-nav {
+  background-color: var(--primary-dark-bg);
+}
+
+/* data table end */

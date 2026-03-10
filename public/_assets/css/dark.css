@@ -1,0 +1,23 @@
+/* navbar start */
+.dark-mode .topnav {
+  background-color: #000000;
+}
+.dark-mode .main-nav .nav-link {
+  color: var(--text_white);
+}
+.dark-mode .main-nav .tick-icons {
+  color: red !important;
+}
+.dark-mode .main-nav {
+  background-color: #000000;
+}
+.dark-mode .main-nav .nav-item .active {
+  background-color: #003030;
+}
+.dark-mode .main-nav #navbarSupportedContent ul li a {
+  color: #ffffff !important;
+}
+.dark-mode .main-nav #navbarSupportedContent ul li:hover > a {
+  background-color: #003030;
+}
+/* navbar end */

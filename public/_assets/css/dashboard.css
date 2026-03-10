@@ -1,0 +1,1364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol,
+a,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: 'Roboto';
+}
+
+:root {
+  /* color */
+  --bg_primary_dark: #2d6668;
+  --bg_primary: #428f92;
+  --bg_secondary: #a9fcff;
+  --bg_success: #f0fae9;
+  --text_primary_dark: #2d6668;
+  --text_secondary_dark: #0e7e7e;
+  --text_primary_fade: #7daeb0;
+  --text_success: #69cb1c;
+  --text_dark: #222222;
+  --text_white: #ffffff;
+}
+@media (min-width: 1480px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1440px;
+  }
+}
+/* ============================== Teacher Dashboard ============================== */
+
+.teacher-profile {
+  /* width: 218.33px; */
+  height: 394px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  border: 0;
+  position: relative;
+}
+
+.teacher-profile .card-header {
+  height: 222px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #e4feff;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: inline-flex;
+}
+
+.teacher-profile .card-header .edit-icon {
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  background-color: #d9f1f1;
+  border-radius: 33px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.teacher-profile .card-header .edit-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.teacher-profile .card-header .profile-img {
+  width: 98px;
+  height: 98px;
+  padding: 0px, 4px, 0px, 4px;
+  border-radius: 61px;
+  gap: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teacher-profile .card-header .profile-img img {
+  width: 83px;
+  height: 93px;
+  padding: 0px, 4px, 0px, 4px;
+  border-radius: 61px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.teacher-profile .card-header .teacher-title {
+  /* width: 154px; */
+  height: 30px;
+  /* padding: 6px, 24px, 6px, 24px; */
+  border-radius: 6px;
+  border: 1px solid #a9fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.teacher-profile .card-header .teacher-title h2 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text_primary_dark);
+  padding: 0 14px;
+}
+
+.teacher-profile .card-header .icon {
+  display: flex;
+}
+
+.teacher-profile .card-header .single-icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #a9fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.teacher-profile .teacher-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.teacher-profile .teacher-info h2 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #222222;
+  margin-top: 15px;
+}
+
+.teacher-profile .teacher-info p {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #555555;
+}
+
+.teacher-profile .teacher-info .button {
+  width: 90%;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 4px;
+  gap: 5px;
+  background-color: #e4feff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  align-self: center;
+}
+
+.teacher-profile .teacher-info .button a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+  color: #195153;
+  align-self: center;
+}
+
+/* chart */
+.student-chart {
+  /* width: 585px; */
+  height: 394px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  border: 0;
+  position: relative;
+  padding: 16px;
+}
+
+.student-chart .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.student-chart .header h3 {
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #222222;
+}
+
+.student-chart .header .timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.student-chart .header .timeline h4 {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-right: 5px;
+  color: #555555;
+}
+
+.student-chart .header .timeline .form-select {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  /* line-height: 20px; */
+  letter-spacing: 0.0225em;
+  color: #428f92;
+  width: 68px;
+  height: 20px;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid #428f92;
+  background-position: right 0.4rem center;
+  background-size: 10px 10px;
+  padding: 0 5px;
+}
+.student-chart .header .all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.student-chart .header .all h4 {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-right: 5px;
+  color: #555555;
+}
+
+.student-chart .header .all .form-select {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  /* line-height: 20px; */
+  letter-spacing: 0.0225em;
+  color: #428f92;
+  width: 60px;
+  height: 20px;
+  padding: 0px;
+  border-radius: 10px;
+  border: 1px solid #428f92;
+  background-position: right 0.4rem center;
+  background-size: 10px 10px;
+  padding: 0 5px;
+}
+.student-chart .header .all .form-select select option {
+}
+
+.student-chart .chart img {
+  width: 100%;
+  height: 280px;
+  margin-top: 30px;
+}
+.all-teacher-student-card {
+  height: 394px;
+}
+.all-teacher-student-card .card-container {
+  height: 91px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  padding: 15px 12px;
+  margin-bottom: 10px;
+}
+.all-teacher-student-card .card-container .total-student {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.all-teacher-student-card .card-container .total-student .title h3 {
+  color: #428f92;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.all-teacher-student-card .card-container .total-student .title h3 span {
+  color: #2d6668;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.all-teacher-student-card .card-container .total-student .title h6 {
+  display: flex;
+  justify-content: center;
+  padding: 0px 8px;
+  gap: 10px;
+  border-radius: 100px;
+  background-color: #e4feff;
+  color: #555;
+  font-family: Public Sans;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 20px;
+  margin-top: 8px;
+}
+.all-teacher-student-card .card-container .total-student .circle {
+  width: 50px;
+  height: 50px;
+  padding: 1px;
+  border-radius: 30px;
+  border: 1px solid #a9fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.all-teacher-student-card .card-container .total-student .circle h5 {
+  font-family: Public Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #428f92;
+}
+
+/* report */
+
+.report-container {
+  margin-top: 12px;
+}
+.report-container h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+}
+
+.student-container {
+  /* width: 267.2px; */
+  height: 72px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 0 12px;
+  margin-bottom: 12px;
+}
+.student-container:hover {
+  box-shadow: 0px 1px 1px 0px #00224233, 0px 0px 1px 0px #0000001a;
+}
+
+.student-container .icon {
+  width: 42px;
+  height: Hug 42px;
+  padding: 9px;
+  border-radius: 30px;
+  background-color: #ffecec;
+}
+.student-container:hover .icon {
+  background-color: #f0f0f0;
+}
+
+.student-container h2 {
+  font-family: Noto Sans Bengali;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 8px;
+  color: #222222;
+}
+/* subject info */
+.subject-container h2 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  color: #222222;
+  padding-bottom: 10px;
+}
+.subject-container .subject-number {
+  /* width: 267.2px; */
+  height: 241px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.subject-container .subject-number .icon {
+  width: 82px;
+  height: 82px;
+  padding: 8px;
+  border-radius: 49px;
+  background-color: #e4feff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subject-container .subject-number h2 {
+  font-family: Public Sans;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #2d6668;
+}
+
+.subject-container .subject-number .total-student {
+  display: flex;
+}
+
+.subject-container .subject-number .total-student p {
+  font-family: Public Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #7daeb0;
+}
+.subject-container .subject-number .total-student .number {
+  width: 27px;
+  height: 18px;
+  padding: 2px, 5px, 2px, 5px;
+  border-radius: 4px;
+  gap: 10px;
+  background-color: #f0fae9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.subject-container .subject-number .total-student .number p {
+  font-family: Public Sans;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 14px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #69cb1c;
+}
+
+.request-container {
+  height: 394px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  padding: 12px;
+}
+.request-container .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.request-container .header p {
+  color: #555;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.request-container .tab-bar {
+}
+.request-container .tab-bar ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #dee2e6;
+}
+.request-container .tab-bar .nav-link.active {
+  border-bottom: 2px solid var(--bg_primary);
+}
+.request-container .tab-bar ul li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  cursor: pointer;
+}
+.request-container .tab-bar ul li h2 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #222222;
+  padding-left: 5px;
+}
+.request-container .tab-container {
+  border-bottom: 1px solid #dee2e6;
+  padding: 5px 0;
+}
+.request-container .tab-container .heading {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 12px;
+}
+.request-container .tab-container .heading .icon {
+  width: 24px;
+  height: 24px;
+  padding: 3px;
+  border-radius: 18px;
+  background-color: #f0fae9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.request-container .tab-container .heading h2 {
+  color: #222;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 21px;
+  padding-left: 5px;
+}
+.request-container .tab-container .teachers {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+.request-container .tab-container .teachers h3 {
+  font-family: Public Sans;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #555555;
+}
+.request-container .tab-container .class-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+.request-container .tab-container .class-day-section {
+  display: flex;
+}
+.request-container .tab-container .class-day-section h6 {
+  display: flex;
+  padding: 0px 6px;
+  align-items: flex-start;
+  gap: 2px;
+  border-radius: 16px;
+  background-color: #f0f9f9;
+  color: #555;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.request-container .tab-container .class-section p {
+  color: #555;
+  font-feature-settings: 'clig' off, 'liga' off;
+  font-family: Public Sans;
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+.request-container .button {
+  /* width: 292px; */
+  height: 32px;
+  padding: 4px, 12px, 4px, 12px;
+  border-radius: 16px;
+  border: 1px solid #428f92;
+  gap: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.request-container .button a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+  color: #428f92;
+  cursor: pointer;
+}
+.request-container .button a:hover {
+  color: #428f92;
+}
+
+/* proficiency container */
+.proficiency-container {
+  height: 394px;
+  padding: 24px;
+  border-radius: 6px;
+  gap: 32px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  padding: 16px;
+}
+.proficiency-container .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.proficiency-container .title h3 {
+  font-family: Public Sans;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: #222222;
+}
+.proficiency-container .pl-container .pl-primary {
+  width: 10px;
+  height: 10px;
+  background-color: #5780ff;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.proficiency-container .pl-container .pl-secondary {
+  width: 10px;
+  height: 10px;
+  background-color: #69cb1c;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.proficiency-container .pl-container h4 {
+  font-family: Public Sans;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.proficiency-container img {
+  width: 100%;
+  height: 284px;
+  margin-top: 30px;
+}
+
+/* teacher list */
+.teacher-list {
+}
+.teacher-list .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.teacher-list .title h3 {
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #222;
+}
+.teacher-list .title a {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #222;
+}
+.teacher-list .teacher-container {
+  /* width: 219.17px; */
+  height: 111px;
+  border-radius: 6px;
+  gap: 5px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  position: relative;
+}
+.teacher-list .teacher-container .card-top-icon {
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  border-radius: 33px;
+  gap: 10px;
+  background-color: #d9f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+.teacher-list .teacher-container .card-top-icon img {
+  width: 10px;
+  height: 9.92px;
+}
+.teacher-list .teacher-container .teacher {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding: 8px 16px;
+}
+.teacher-list .teacher-container .teacher img {
+  width: 51px;
+  height: 57px;
+}
+.teacher-list .teacher-container .teacher h3 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #222222;
+  padding-left: 10px;
+  margin-top: 6px;
+}
+.teacher-list .teacher-container .teacher h4 {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #555555;
+  padding-left: 10px;
+}
+.teacher-list .teacher-container .subjects {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6px;
+}
+.teacher-list .teacher-container .subjects .subject {
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #e4feff;
+  gap: 8px;
+}
+.teacher-list .teacher-container .subjects .subject h3 {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.0225em;
+  color: #00a1a1;
+  padding: 0 6px;
+}
+/* class routine */
+.class-routine-container {
+  margin-top: 13px;
+  padding: 24px;
+  border-radius: 6px;
+  gap: 32px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+}
+.class-routine-container .class-routine-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 16px;
+}
+.class-routine-container .class-routine-header .class_routine {
+  font-family: Public Sans;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0px;
+}
+.class-routine-container .class-routine-header .class-routine-selector {
+  display: flex;
+  align-items: center;
+}
+.class-routine-container
+  .class-routine-header
+  .class-routine-selector
+  .timeline {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.class-routine-container
+  .class-routine-header
+  .class-routine-selector
+  .timeline
+  h4 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #555555;
+  padding-right: 12px;
+}
+
+.class-routine-container
+  .class-routine-header
+  .class-routine-selector
+  .timeline
+  .form-select {
+  width: auto;
+  height: 48px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 24px;
+  border: 1px solid #428f92;
+  gap: 10px;
+  color: #428f92;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+}
+.class-routine-container .class-routine-header .class-routine-selector .all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.class-routine-container .class-routine-header .class-routine-selector .all h4 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 0em;
+  color: #555555;
+  padding: 0 12px;
+}
+
+.class-routine-container
+  .class-routine-header
+  .class-routine-selector
+  .form-select {
+  width: auto;
+  height: 48px;
+  padding: 8px, 16px, 8px, 16px;
+  border-radius: 24px;
+  border: 1px solid #428f92;
+  gap: 10px;
+  color: #428f92;
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+  text-align: left;
+}
+.class-routine-container .tabbar {
+  height: 46px;
+  border-radius: 6px;
+  gap: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  margin: 24px 0;
+}
+.class-routine-container .tabbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 6px;
+}
+.class-routine-container .tabbar ul li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.class-routine-container .tabbar ul li a h3 {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #555555;
+  padding-left: 10px;
+}
+
+.class-routine-container .routine-section {
+  display: flex;
+  margin: 16px 0px 16px 0px;
+}
+.class-routine-container .routine-section ul {
+  gap: 10px;
+}
+.class-routine-container .routine-section .class-section {
+  border-radius: 16px;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+}
+
+.routine-section .nav-item .nav-link {
+  color: var(--text_dark);
+  border-radius: 16px;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 4px, 12px, 4px, 12px;
+}
+.routine-section .nav-item.active {
+  border-bottom: none;
+  background-color: var(--bg_primary);
+  color: var(--text_white);
+  border-radius: 16px;
+  box-shadow: 0px 2px 3px 0px #0000001a;
+}
+.routine-section .nav-item.active a {
+  color: var(--text_white);
+}
+
+.dataTables_length label {
+  font-size: 16px;
+  margin: 16px 0px 16px 0px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: var(--text_dark);
+}
+.dataTables_filter label {
+  font-size: 16px;
+  margin: 16px 0px 16px 0px;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: var(--text_dark);
+}
+.pagination .page-item a {
+  color: var(--text_dark);
+}
+
+.dataTables_paginate {
+  font-size: 16px;
+  margin: 16px 0px 16px 0px !important;
+  font-family: Roboto;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  color: var(--text_dark);
+}
+.dataTables_info {
+  font-size: 16px;
+  margin: 16px 0px 16px 0px !important;
+}
+.previous a {
+  font-size: 16px;
+  color: var(--bg_primary);
+}
+.page-item.active .page-link {
+  background-color: var(--bg_primary);
+  color: var(--text_white);
+}
+.next a {
+  font-size: 16px;
+  color: var(--bg_primary);
+}
+.class-routine-container .class-routine-table {
+  padding: 16px 0px 16px 0px;
+}
+.class-routine-container .class-routine-table .class-routine-table-tab-nav {
+  background-color: #dddddd54;
+  border-radius: 6px;
+  line-height: 22px;
+}
+.class-routine-container
+  .class-routine-table
+  .class-routine-table-tab-nav
+  .gap-distance {
+  gap: 10px;
+}
+.class-routine-container .class-routine-table .class-routine-table-tab-nav a {
+  color: #555555;
+  font-size: 14px;
+}
+.class-routine-table .tab-th-style {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  background-color: #f0f9f9;
+  padding: 18px 16px;
+}
+
+.class-routine-table .nav-link.active {
+  border-bottom: 2px solid var(--bg_primary);
+}
+.class-routine-table .class-and-section.active {
+  background-color: var(--bg_primary);
+  color: var(--text_white);
+}
+.table > :not(:last-child) > :last-child > * {
+  border-bottom-color: #e5e5e5;
+}
+.class-routine-table .tab-first-td-style {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  background-color: #f0f9f9;
+  padding: 18px 16px;
+  min-width: 100px;
+}
+.class-routine-table .tab-td-style {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0em;
+  padding: 18px 16px;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .student-chart .header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .student-chart .header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+}
+/* ============================= /Teacher Dashboard ============================== ==================================================================================*/
+
+/* ================================ Head Master ============================== */
+.head-maseter-card-container {
+  height: 360px;
+  padding: 60px, 24px, 60px, 24px;
+  border-radius: 6px;
+  gap: 32px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  padding: 60px 24px;
+}
+
+.head-maseter-card-container .head-master-card {
+  height: 64px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  margin: 8px 0;
+}
+.head-maseter-card-container .head-master-card:hover {
+  box-shadow: 0px 1px 1px 0px #00224233, 0px 0px 1px 0px #0000001a;
+}
+
+.head-maseter-card-container .head-master-card .number {
+  width: 34px;
+  height: 34px;
+  padding: 9px;
+  border-radius: 30px;
+  background-color: #f0f9f9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head-maseter-card-container .head-master-card .number h4 {
+  font-family: Noto Sans Bengali;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: #00a1a1;
+}
+.head-maseter-card-container .head-master-card .icon {
+  width: 28px;
+  height: 28px;
+  padding: 9px;
+  border-radius: 30px;
+  background-color: #fffae6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* .head-maseter-card-container .head-master-card:hover .icon {
+  background-color: #f0f0f0;
+} */
+
+.head-maseter-card-container .head-master-card h2 {
+  font-family: Noto Sans Bengali;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  padding-left: 8px;
+  color: #222222;
+}
+
+.head-master-profile {
+  /* width: 218.33px; */
+  height: 360px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  border: 0;
+  position: relative;
+}
+
+.head-master-profile .card-header {
+  height: 222px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #e4feff;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 15px;
+  display: inline-flex;
+}
+
+.head-master-profile .card-header .edit-icon {
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  background-color: #d9f1f1;
+  border-radius: 33px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  display: flex;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  cursor: pointer;
+}
+
+.head-master-profile .card-header .edit-icon img {
+  width: 12px;
+  height: 12px;
+}
+
+.head-master-profile .card-header .profile-img {
+  width: 98px;
+  height: 98px;
+  padding: 0px, 4px, 0px, 4px;
+  border-radius: 61px;
+  gap: 10px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.head-master-profile .card-header .profile-img img {
+  width: 83px;
+  height: 93px;
+  padding: 0px, 4px, 0px, 4px;
+  border-radius: 61px;
+  gap: 10px;
+  background-color: #fff;
+}
+
+.head-master-profile .card-header .teacher-title {
+  /* width: 154px; */
+  height: 30px;
+  /* padding: 6px, 24px, 6px, 24px; */
+  border-radius: 6px;
+  border: 1px solid #a9fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.head-master-profile .card-header .teacher-title h2 {
+  font-family: Roboto;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: var(--text_primary_dark);
+  padding: 0 14px;
+}
+
+.head-master-profile .card-header .icon {
+  display: flex;
+}
+
+.head-master-profile .card-header .single-icon {
+  width: 32px;
+  height: 32px;
+  padding: 8px;
+  border-radius: 16px;
+  border: 1px;
+  gap: 10px;
+  background-color: #fff;
+  border: 1px solid #a9fcff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6px;
+}
+
+.head-master-profile .teacher-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.head-master-profile .teacher-info h2 {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #222222;
+  margin-top: 15px;
+}
+
+.head-master-profile .teacher-info p {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0em;
+  color: #555555;
+}
+
+.head-master-profile .teacher-info .button {
+  width: 90%;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 4px;
+  gap: 5px;
+  background-color: #e4feff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 20px;
+  align-self: center;
+}
+
+.head-master-profile .teacher-info .button a {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.0225em;
+  color: #195153;
+  align-self: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .head-maseter-card-container {
+    height: auto;
+    padding: 10px 12px;
+    border-radius: 6px;
+    gap: 10px;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+  .head-maseter-card-container {
+    padding: 10px 10px;
+    border-radius: 6px;
+    gap: 10px;
+  }
+  .head-maseter-card-container .head-master-card {
+    padding: 0 5px;
+    margin: 8px 0;
+  }
+}
+
+/* ================================ /Head Master ============================= */

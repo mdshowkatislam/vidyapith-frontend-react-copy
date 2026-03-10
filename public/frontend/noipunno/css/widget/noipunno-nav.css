@@ -1,0 +1,97 @@
+.noipunno-dropdown {
+}
+
+.noipunno-dropdown::after {
+    display: none;
+}
+
+.user-section {
+    width: 32px;
+    height: 32px;
+}
+
+.user-section img {
+    width: 100%;
+}
+.noipunno-navbar-section{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+}
+
+
+.noipunno-navbar-section {
+    border-bottom: 1px solid #dbdade69;
+    background: #fff;
+    box-shadow: var(--shadow-color-1);
+}
+
+.noipunno-navbar-section .navbar {
+    background-color: transparent !important;
+}
+
+.noipunno-navbar-section .dropdown-toggle::after {
+    content: none;
+}
+
+.noipunno-navbar-section .create-profile-dropdown-container {
+    padding: 5px 5px !important;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.noipunno-navbar-section .create-profile-dropdown-container .dropdown-item {
+    padding: 10px 20px;
+}
+
+.noipunno-navbar-section
+    .create-profile-dropdown-container
+    .dropdown-item:hover {
+    background: var(--primary-color-2);
+}
+.noipunno-navbar-section hr {
+    margin: 0;
+}
+.noipunno-navbar-section .pages-buttons button{
+    border: none;
+    background-color: transparent;
+
+}
+.noipunno-navbar-section .pages-buttons button a{
+    text-decoration: none;
+    color: var(--text-primary-color)
+}
+.noipunno-navbar-section .pages-buttons button:active {
+    background-color: var( --primary-color-2);
+    border: none;
+}
+
+.noipunno-navbar-section .pages-buttons button a:visited{
+    background-color: var( --primary-color-2);
+  
+}
+.noipunno-navbar-section .offcanvas{
+    max-width: 300px;
+}
+.noipunno-navbar-section .subheader-accordion .accordion-button:focus{
+    box-shadow: none ;
+}
+
+.noipunno-navbar-section .subheader-accordion .accordion-button:not(.collapsed){
+    background-color: var(--primary-color-2);
+}
+.noipunno-navbar-section a {
+    cursor: pointer;
+}
+.responsive-single-menu-button::after{
+    visibility: hidden;
+}
+.empty-section{
+    height: 122px;
+}
+@media screen and (max-width: 992px) {
+ .empty-section{
+    height: 117px;
+ }
+  }

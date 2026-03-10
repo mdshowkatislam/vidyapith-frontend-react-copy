@@ -1,0 +1,11 @@
+.np-modal {
+  width: 500px;
+}
+.np-modal .np-modal-header,
+.np-modal-accept {
+  background-color: var(--primary-color-1);
+}
+
+.np-modal .np-modal-decline {
+  background-color: var(--button-decline-color);
+}

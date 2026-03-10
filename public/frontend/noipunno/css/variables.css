@@ -1,0 +1,62 @@
+:root {
+    --text-primary-color: rgba(24, 28, 50, 1); /* title text color */
+    --text-secondary-color: rgba(85, 85, 85, 1); /* sub title text color */
+
+    --primary-color-1: rgba(66, 143, 146, 1); /* primary background color */
+    --primary-color-2: rgba(
+        228,
+        254,
+        255,
+        1
+    ); /* primary background color 2-> with shade */
+    
+    --white-bg: rgba(255, 255, 255, 1); /* white bg color */
+    --bg-color-1: rgba(245, 248, 250, 1); /* background color for section */
+    --bg-form-color: #e4feff; /* form background color */
+    --primary-color-dark: rgba(45, 102, 104, 1);
+
+    --secondary-dark-1: rgba(
+        14,
+        126,
+        126,
+        1
+    ); /* background color for section */
+    --secondary-dark-2: rgba(165, 163, 174, 0.3);
+    --secondary-dark-3: rgba(75, 70, 92, 0.1);
+    --secondary-color-1: rgba(240, 249, 249, 1);
+
+    --shadow-color-1: rgba(0, 0, 0, 0.1); /* box shadow */
+    --input-field-box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1),
+        0px 0px 1px 0px rgba(0, 0, 0, 0.1); /* input field box shadow */
+
+    --footer-text-color: #4b465c; /* footer text color */
+
+    --border-color-1: rgba(229, 229, 229, 1); /* border color */
+    --border-color-2: rgba(169, 252, 255, 1); /* border color */
+
+    --bold-text-color-1: rgba(34, 34, 34, 1); /* bold text colors */
+    --profile-sub-title-color: #555;
+
+    --rounded-btn-color: rgba(
+        87,
+        128,
+        255,
+        1
+    ); /* btn color for rounded buttons */
+
+    --color-warning: rgba(255, 250, 230, 1);
+    --color-success: rgba(105, 203, 28, 1);
+    --color-success-1: rgba(240, 250, 233, 1);
+
+    --info-color-1: rgba(239, 243, 255, 1);
+    --info-text-color-1: rgba(37, 151, 214, 1);
+
+    --warning-color-1: rgba(255, 250, 230, 1);
+    --warning-text-color-1: rgba(123, 81, 0, 1);
+    
+    --error-color-1: rgba(255, 236, 236, 1);
+    --error-text-color-1: rgba(154, 59, 38, 1);
+    --button-decline-color: rgba(255, 77, 76, 1);
+
+    --placeholder-color: rgba(153, 153, 153, 0.8);
+}

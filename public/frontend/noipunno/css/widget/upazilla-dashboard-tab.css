@@ -1,0 +1,62 @@
+.upazila-tab {
+  background-color: #fff;
+}
+
+.upazila-tab small{
+  font-size: 11px;
+}
+.upazila-tab p{
+  font-size: 12px;
+}
+
+.upazila-tab-header{
+  /* background-color: #fff; */
+}
+.upazilla-tab-container{
+  display: flex;
+  /* background-color: #fff; */
+  flex-direction: row;
+}
+.upazilla-tab{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.upazilla-tab-link,
+.upazilla-tab-link.active {
+   
+    text-align: center;
+    
+    color: black;
+    font-weight: 600;
+    padding: 2%;
+    width: 100%;
+
+}
+
+.upazilla-tab-link.active {
+  border-bottom: 2px solid #428F92 !important;
+  border: none;
+}
+
+.upazila-tab .requests{
+  max-height: 200px;
+  overflow-y: scroll;
+}
+
+.upazila-tab .badge{
+  background-color: #F0F9F9;
+}
+.upazila-tab .request{
+  border-bottom: 1px solid #e5e5e5 ;
+}
+
+.upazila-tab .requests-button{
+  background-color: #fff;
+  height: 32px;
+  border-radius: 16px;
+  width: 100%;
+  color: #428F92;
+  border: 1px solid  #428F92;
+}

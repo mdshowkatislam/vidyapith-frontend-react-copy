@@ -1,0 +1,83 @@
+.teacher-list-card {
+  height: 430px;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px 0px #0000001a, 0px 0px 1px 0px #0000001a;
+  border: none;
+  margin-bottom: 20px;
+}
+.teacher-list-card .card-header {
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+}
+.teacher-list-card .card-header .profile {
+  display: flex;
+  /* justify-content: start; */
+  align-items: center;
+}
+.teacher-list-card .card-header .profile img {
+  width: 60px;
+  height: 60px;
+}
+.teacher-list-card .card-header .profile .name {
+  padding-left: 10px;
+}
+.teacher-list-card .card-header .profile h3 {
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  /* color: #2222; */
+}
+.teacher-list-card .card-header .profile p {
+  font-family: Roboto;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #555555;
+}
+.teacher-list-card .card-header .dots {
+  width: 22px;
+  height: 22px;
+  padding: 5px;
+  border-radius: 33px;
+  gap: 10px;
+  background-color: #d9f1f1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.teacher-list-card .card-body .subjects {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+}
+.teacher-list-card .card-body .subjects .subject {
+  height: 20px;
+  border-radius: 4px;
+  border: 1px solid #e4feff;
+  gap: 8px;
+}
+.teacher-list-card .card-body .subjects .subject h3 {
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.0225em;
+  color: #00a1a1;
+  padding: 0 6px;
+}
+.teacher-list-card .card-body .table > :not(caption) > * > * {
+  border-bottom-width: 0;
+}
+.teacher-list-card .card-body .table tr td {
+  font-family: Roboto;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 5px 0;
+}

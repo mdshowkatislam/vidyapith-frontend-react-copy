@@ -1,0 +1,39 @@
+.np-card {
+    border-radius: 6px;
+    box-shadow: 1px 3px 5px 0px var(--secondary-dark-2);
+    -webkit-box-shadow: 1px 3px 5px 0px var(--secondary-dark-2);
+    -moz-box-shadow: 1px 3px 5px 0px var(--secondary-dark-2);
+    border: unset;
+}
+
+.np-profile-card-header {
+    background: var(--white-bg);
+    padding: 4%;
+}
+
+.np-profile-card {
+    margin-top: 5%;
+    line-height: 12px;
+}
+
+.np-card-image {
+    display: flex;
+    align-items: center;
+}
+
+.np-card-details {
+    line-height: 10px;
+}
+
+.np-card-title {
+    font-weight: 600;
+    line-height: 16px;
+    text-decoration: unset;
+}
+
+.np-card-subtitle {
+    font-size: 13px;
+    color: var(--profile-sub-title-color);
+    text-decoration: unset;
+    /* line-height: 12px; */
+}

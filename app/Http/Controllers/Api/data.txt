@@ -1,0 +1,141 @@
+বাংলাদেশ ও বিশ্বপরিচয়
+branch_id : "1826391781401364"
+class_id : "1826392935994926"
+exam_category_id : "1833793918391908"
+section_id : "1826458454964325"
+subject_id : "1826729554953615"
+
+
+বাংলা ১ম পত্র
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918367918"
+section_id: "1826458454964325"
+subject_id: "1826727720689240"
+
+
+বাংলা ২য় পত্র
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918370749"
+section_id: "1826458454964325"
+subject_id: "1826727868633875"
+
+
+ইংরেজি ১ম পত্র
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918372772"
+section_id: "1826458454964325"
+subject_id: "1826727973609220"
+
+
+ইংরেজি ২য় পত্র
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918374966"
+section_id: "1826458454964325"
+subject_id: "1826728021357184"
+
+
+ইসলাম ও নৈতিক শিক্ষা
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918378863"
+section_id: "1826458454964325"
+subject_id: "1826728173808559"
+
+
+বাংলাদেশ ও বিশ্বপরিচয়
+branch_id: "1826391781401364"
+class_id: "1826392935994926"
+exam_category_id: "1833793918391908"
+section_id: "1826458454964325"
+subject_id: "1826729554953615"
+
+
+<!-- <div class="col-xs-4">
+        @foreach($company_info as $cominfo)
+        <img src="{{ isset($setting->invoice_logo) ? asset($setting->invoice_logo) : '' }}" 
+            class="img-bottom-m print-logo invoice-img-position" alt="">
+        <br><br>
+
+        <span class="label label-success-outline m-r-15 p-10">{{ __('Billing From') }}</span>
+        <address class="margin-top10">
+            <strong class="">{{ $cominfo['company_name'] }}</strong><br>
+            <span class="comp-web">{{ $cominfo['address'] }}</span><br>
+            <abbr class="font-bold">{{ __('Mobile') }}: </abbr>
+            {{ $cominfo['mobile'] }}<br>
+
+            <abbr class="font-bold">{{ __('Email') }}:</abbr>
+            {{ $cominfo['email'] }}<br>
+            <abbr class="font-bold">{{ __('Website') }}:</abbr>
+            <span class="comp-web">{{ $cominfo['website'] }}</span><br>
+            @if(!empty($cominfo['vat_no']))
+            <abbr class="font-bold">{{ __('VAT No') }}: </abbr>
+            {{ $cominfo['vat_no'] }}<br>
+            @endif
+            @if(!empty($cominfo['cr_no']))
+            <abbr class="font-bold">{{ __('CR No') }}: </abbr>
+            {{ $cominfo['cr_no'] }}<br>
+            @endif
+        </address>
+        @endforeach
+    </div> -->
+
+ <!-- <div class="col-xs-4 print-qr">
+        @php
+            $web_setting = DB::table("web_setting")->first();
+        @endphp
+        @if($web_setting->is_qr == 1)
+            @php
+                $text = base64_encode(__('Invoice No').': '.$purchase_id.' '.__('Customer Name').': '. $supplier_name);
+            @endphp
+            <img src="http://chart.apis.google.com/chart?cht=qr&chs=250x250&chld=L|4&chl={{ $text }}" alt="">
+        @endif
+    </div> -->
+
+
+    <!-- {{ date("H:i:s", strtotime($create_at->created_at)) }} -->
+
+
+<script>
+function printDivnew(divName) {
+    var printContents = document.getElementById(divName).innerHTML;
+    var originalContents = document.body.innerHTML;
+    document.body.innerHTML = printContents;
+    window.print();
+    document.body.innerHTML = originalContents;
+}
+</script>
+
+
+// $getAllResult = Result::get();
+// foreach($getAllResult as $result){
+//     $exam_type = $this->examConfigureService->getById($result->exam_category_id);
+//     $markDistribution = MarkDistribution::where('exam_id', $result->exam_category_id)->where('student_id', $result->student_id)->first();
+//     $resultStatus = $markDistribution ? ($markDistribution->status == 1 ? ((($result->full_mark * 100)/ $exam_type->exam_full_mark) >= 33 ? 'Pass' : 'Fail') : 'Absent') : 'Absent';
+//     $result->update([
+//         'result_status'     => $resultStatus,
+//         'grad_point'        => $resultStatus == 'Pass' ? $this->gradPointConvert(($result->full_mark * 100)/ $exam_type->exam_full_mark)['point'] : 0.00,
+//         'grade'             => $resultStatus != 'Absent' ? ($resultStatus == 'Pass' ? $this->gradPointConvert(($result->full_mark * 100)/ $exam_type->exam_full_mark)['grade'] : 'F') : 'Absent',
+//         'is_present'        => $markDistribution ? $markDistribution->status : 'Absent',
+//     ]);
+// }
+// return $getAllResult;
+
+// $getAllResult = Result::get();
+// $sectionWise = $getAllResult->groupBy('section_id');
+
+// foreach($sectionWise as $sectionResult){
+//     $subjectWise = $sectionResult->groupBy('subject_id');
+//     foreach($subjectWise as $subjectResult){
+//         $highest_mark =  $subjectResult->max('full_mark');
+//         foreach($subjectResult as $result){
+//             $result->update([
+//                 'highest_mark' => $highest_mark
+//             ]);
+//         }
+//     }
+// }
+// return $getAllResult;

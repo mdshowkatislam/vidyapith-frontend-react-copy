@@ -1,0 +1,27 @@
+.np-input-form-bg {
+    background: var(--bg-form-color);
+    padding: 2% 1%;
+    box-shadow: var(--input-field-box-shadow);
+}
+
+.np-teacher-input {
+    border-radius: 5px !important;
+    border: none;
+    box-shadow: var(--input-field-box-shadow);
+}
+
+.np-teacher-input::placeholder{
+    color: var(--placeholder-color)
+}
+
+.np-search-field-icon {
+    position: absolute;
+    right: 3%;
+    top: 25%;
+    z-index: 100;
+    cursor: pointer;
+}
+.np-search-suggesition-list {
+    position: absolute;
+    width: 335px;
+}

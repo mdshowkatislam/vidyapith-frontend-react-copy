@@ -1,0 +1,158 @@
+@import url("../widget/login-card.css");
+
+.login-bg {
+    background: linear-gradient(180deg, #BEFDFF 0%, #51B9BD 100%);
+    background-image: url('../../../images/login-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 3%;
+    font-family: 'Inter', sans-serif
+    /* min-height: 100vh; */
+}
+
+.login-form-card {
+    padding: 8% 8% 25% 8%;
+    border: none;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.login-container {
+    padding-top: 6%;
+    padding-bottom: 4%;
+}
+
+.teacher-login-title {
+    color: #181C32;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 39px;
+}
+
+.np-login-subtitle {
+    color: var(--text-secondary-color);
+}
+
+.np-login-checbox-text {
+    color: var(--text-secondary-color);
+}
+
+.login-button {
+    display: flex;
+    padding: 14px 112px 14px 111px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    background: var(--primary-color-1);
+    margin: 0 auto;
+    width: 100%;
+}
+
+.login-button:hover {
+    background: #428F92;
+}
+
+.password-toggle {
+    position: absolute;
+    right: 3%;
+    top: 20%;
+    z-index: 100;
+}
+
+.np-login-field-icon {
+    position: absolute;
+    left: 4%;
+    z-index: 100;
+    top: 30%;
+    width: 20px;
+}
+
+.np-login-form-field {
+    border-radius: 5px !important;
+    background-color: #F5F8FA;
+    padding: 0.775rem 2.75rem;
+    border: none;
+}
+
+.login-field-title {
+    color: #428F92;
+    margin: 10px 0;
+
+}
+
+.login-next-page {
+    color: white;
+    text-decoration: none;
+}
+
+.login-forget-pass {
+    float: right;
+    text-decoration: none;
+    color: black;
+}
+.login-language {
+    font-weight: 400;
+    color: #222;
+}
+
+/***********
+Language Switch
+ ************/
+.language-switch {
+    visibility: hidden;
+}
+
+.switch-label {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.switch-rail {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    width: 45px;
+    height: 30px;
+    background: #DDDDDD;
+    border-radius: 50px;
+    overflow: hidden;
+    left: 34%;
+}
+
+.switch-slider {
+    transition: all 0.2s ease-in-out;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: #428F92;
+}
+
+.language-switch:checked+.switch-label .switch-rail {
+    transition: all 0.2s ease-in-out;
+    background: #DDDDDD;
+}
+
+.language-switch:checked+.switch-label .switch-rail .switch-slider {
+    transition: all 0.2s ease-in-out;
+    transform: translateX(15px);
+}
+
+.switch-label-right {
+    padding-left: 55px;
+}
+
+/* mobile media query */
+
+@media (max-width: 768px) {
+    .switch-rail {
+        left: 90%;
+    }
+    .login-language {
+        font-size: 11px;
+    }
+}
